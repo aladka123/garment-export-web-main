@@ -1,5 +1,5 @@
 import { Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react";
-import logo from "../assets/logoSH1.png";
+// import logo from "../assets/logoSH1.png";
 
 export default function Footer() {
   const scrollToSection = (id: string) => {
@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-12 h-12 rounded-lg flex items-center justify-center">
                 <img
-                  src={logo}
+                  src="https://www.shutterstock.com/image-vector/logistic-logo-design-template-freight-600w-2508614641.jpg"
                   alt="Song Huong Imex Logo"
                   className="w-full h-full object-contain p-1"
                 />
