@@ -1,16 +1,16 @@
-import { Send, Mail, Phone, MapPin } from 'lucide-react';
-import { useState, FormEvent } from 'react';
+import { Send, Mail, Phone, MapPin } from "lucide-react";
+import { useState, FormEvent } from "react";
 
 export default function QuoteForm() {
   const [formData, setFormData] = useState({
-    company: '',
-    name: '',
-    email: '',
-    phone: '',
-    country: '',
-    productType: '',
-    quantity: '',
-    message: ''
+    company: "",
+    name: "",
+    email: "",
+    phone: "",
+    country: "",
+    productType: "",
+    quantity: "",
+    message: "",
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -21,10 +21,14 @@ export default function QuoteForm() {
     setTimeout(() => setSubmitted(false), 3000);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -32,21 +36,30 @@ export default function QuoteForm() {
     <section id="quote" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">Get In Touch</span>
+          <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">
+            Get In Touch
+          </span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-3 mb-6">
             Request a Quote
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Tell us about your project and we'll get back to you within 24 hours with a competitive quote.
+            Tell us about your project and we'll get back to you within 24 hours
+            with a competitive quote.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
-            <form onSubmit={handleSubmit} className="bg-slate-50 rounded-2xl p-8 md:p-12">
+            <form
+              onSubmit={handleSubmit}
+              className="bg-slate-50 rounded-2xl p-8 md:p-12"
+            >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label htmlFor="company" className="block text-sm font-semibold text-slate-900 mb-2">
+                  <label
+                    htmlFor="company"
+                    className="block text-sm font-semibold text-slate-900 mb-2"
+                  >
                     Company Name *
                   </label>
                   <input
@@ -61,7 +74,10 @@ export default function QuoteForm() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-slate-900 mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-semibold text-slate-900 mb-2"
+                  >
                     Your Name *
                   </label>
                   <input
@@ -79,7 +95,10 @@ export default function QuoteForm() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-slate-900 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-semibold text-slate-900 mb-2"
+                  >
                     Email Address *
                   </label>
                   <input
@@ -94,7 +113,10 @@ export default function QuoteForm() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-slate-900 mb-2">
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-semibold text-slate-900 mb-2"
+                  >
                     Phone Number
                   </label>
                   <input
@@ -111,7 +133,10 @@ export default function QuoteForm() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label htmlFor="country" className="block text-sm font-semibold text-slate-900 mb-2">
+                  <label
+                    htmlFor="country"
+                    className="block text-sm font-semibold text-slate-900 mb-2"
+                  >
                     Country *
                   </label>
                   <input
@@ -126,7 +151,10 @@ export default function QuoteForm() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="productType" className="block text-sm font-semibold text-slate-900 mb-2">
+                  <label
+                    htmlFor="productType"
+                    className="block text-sm font-semibold text-slate-900 mb-2"
+                  >
                     Product Type *
                   </label>
                   <select
@@ -148,7 +176,10 @@ export default function QuoteForm() {
               </div>
 
               <div className="mb-6">
-                <label htmlFor="quantity" className="block text-sm font-semibold text-slate-900 mb-2">
+                <label
+                  htmlFor="quantity"
+                  className="block text-sm font-semibold text-slate-900 mb-2"
+                >
                   Estimated Quantity *
                 </label>
                 <input
@@ -164,7 +195,10 @@ export default function QuoteForm() {
               </div>
 
               <div className="mb-6">
-                <label htmlFor="message" className="block text-sm font-semibold text-slate-900 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-semibold text-slate-900 mb-2"
+                >
                   Project Details *
                 </label>
                 <textarea
@@ -183,7 +217,7 @@ export default function QuoteForm() {
                 type="submit"
                 className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg flex items-center justify-center space-x-2 shadow-lg"
               >
-                <span>{submitted ? 'Request Sent!' : 'Send Request'}</span>
+                <span>{submitted ? "Request Sent!" : "Send Request"}</span>
                 <Send className="w-5 h-5" />
               </button>
             </form>
@@ -191,16 +225,23 @@ export default function QuoteForm() {
 
           <div className="space-y-6">
             <div className="bg-slate-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">
+                Contact Information
+              </h3>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <div className="font-semibold text-slate-900 mb-1">Email</div>
-                    <a href="mailto:sales@vietnamtextile.com" className="text-slate-600 hover:text-blue-600 transition-colors">
-                      sales@vietnamtextile.com
+                    <div className="font-semibold text-slate-900 mb-1">
+                      Email
+                    </div>
+                    <a
+                      href="mailto:sales@vietnamtextile.com"
+                      className="text-slate-600 hover:text-blue-600 transition-colors"
+                    >
+                      info.songhuong39ltd@gmail.com
                     </a>
                   </div>
                 </div>
@@ -209,9 +250,14 @@ export default function QuoteForm() {
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <div className="font-semibold text-slate-900 mb-1">Phone</div>
-                    <a href="tel:+84123456789" className="text-slate-600 hover:text-blue-600 transition-colors">
-                      +84 123 456 789
+                    <div className="font-semibold text-slate-900 mb-1">
+                      Phone
+                    </div>
+                    <a
+                      href="tel:+84123456789"
+                      className="text-slate-600 hover:text-blue-600 transition-colors"
+                    >
+                      +84 845 662 525
                     </a>
                   </div>
                 </div>
@@ -220,9 +266,12 @@ export default function QuoteForm() {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <div className="font-semibold text-slate-900 mb-1">Address</div>
+                    <div className="font-semibold text-slate-900 mb-1">
+                      Address
+                    </div>
                     <p className="text-slate-600">
-                      Industrial Zone, Binh Duong Province<br />
+                      No. 11 Hong Ha Street, Tan Son Hoa Ward, Ho Chi Minh City
+                      <br />
                       Vietnam
                     </p>
                   </div>
@@ -233,11 +282,14 @@ export default function QuoteForm() {
             <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 text-white">
               <h3 className="text-xl font-bold mb-3">Quick Response</h3>
               <p className="text-blue-100 mb-4">
-                Our sales team typically responds within 24 hours during business days.
+                Our sales team typically responds within 24 hours during
+                business days.
               </p>
               <div className="border-t border-blue-400 pt-4">
                 <div className="text-sm text-blue-100 mb-1">Business Hours</div>
-                <div className="font-semibold">Mon - Fri: 8:00 AM - 6:00 PM (GMT+7)</div>
+                <div className="font-semibold">
+                  Mon - Fri: 8:00 AM - 6:00 PM (GMT+7)
+                </div>
               </div>
             </div>
           </div>

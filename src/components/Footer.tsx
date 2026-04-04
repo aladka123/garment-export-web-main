@@ -1,5 +1,5 @@
 import { Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react";
-// import logo from "../assets/logoSH1.png";
+import logo from "../assets/logosonghuong.jpeg";
 
 export default function Footer() {
   const scrollToSection = (id: string) => {
@@ -17,14 +17,14 @@ export default function Footer() {
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-12 h-12 rounded-lg flex items-center justify-center">
                 <img
-                  src="https://www.shutterstock.com/image-vector/logistic-logo-design-template-freight-600w-2508614641.jpg"
+                  src={logo}
                   alt="Song Huong Imex Logo"
                   className="w-full h-full object-contain p-1"
                 />
               </div>
               <div>
                 <h3 className="text-white font-bold text-lg">
-                  Song Huong Imex
+                  Song Huong 39 Imex Trading & Service Co.,Ltd
                 </h3>
               </div>
             </div>
@@ -120,24 +120,28 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
-                <span>Industrial Zone, Binh Duong Province, Vietnam</span>
+                <span>
+                  No. 11 Hong Ha Street, Tan Son Hoa Ward, Ho Chi Minh City,
+                  Vietnam
+                </span>
               </li>
               <li className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
                 <a
-                  href="tel:+84123456789"
+                  href="tel:+84 845 662 525"
                   className="hover:text-white transition-colors"
                 >
-                  +84 123 456 789
+                  +84 845 662 525
                 </a>
               </li>
               <li className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
                 <a
-                  href="mailto:sales@vietnamtextile.com"
+                  href="info.songhuong39ltd@gmail.com
+"
                   className="hover:text-white transition-colors"
                 >
-                  sales@vietnamtextile.com
+                  info.songhuong39ltd@gmail.com
                 </a>
               </li>
             </ul>
@@ -147,7 +151,8 @@ export default function Footer() {
         <div className="border-t border-slate-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-slate-400 text-sm">
-              &copy; 2024 Vietnam Textile Co. All rights reserved.
+              &copy; Song Huong 39 Imex Trading & Service Co.,Ltd . All rights
+              reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="hover:text-white transition-colors">

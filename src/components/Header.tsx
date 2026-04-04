@@ -1,6 +1,6 @@
 import { Menu, X, Globe } from "lucide-react";
 import { useState } from "react";
-// import logo from "../assets/logoSH1.png";
+import logo from "../assets/logosonghuong.jpeg";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function Header() {
           <div className="flex items-center space-x-2">
             <div className="w-12 h-12 rounded-lg flex items-center justify-center">
               <img
-                src="https://www.shutterstock.com/image-vector/logistic-logo-design-template-freight-600w-2508614641.jpg"
+                src={logo}
                 alt="Song Huong Imex Logo"
                 className="w-full h-full object-contain p-1"
               />
