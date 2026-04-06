@@ -1,4 +1,13 @@
-import { Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import {
+  Facebook,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+  LucideNotepadText,
+  LucideBanknote,
+  LucideReceipt,
+} from "lucide-react";
 import logo from "../assets/logosonghuong.jpeg";
 
 export default function Footer() {
@@ -142,6 +151,12 @@ export default function Footer() {
                   className="hover:text-white transition-colors"
                 >
                   info.songhuong39ltd@gmail.com
+                </a>
+              </li>
+              <li className="flex items-start space-x-3">
+                <LucideReceipt className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
+                <a className="hover:text-white transition-colors">
+                  Tax ID: 0319348176
                 </a>
               </li>
             </ul>

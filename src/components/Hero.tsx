@@ -36,7 +36,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-200 mb-8 leading-relaxed">
-            With over 15 years of experience, we deliver high-quality textile
+            With over 5+ years of experience, we deliver high-quality textile
             products to international markets. From design to delivery, we
             ensure excellence at every step.
           </p>

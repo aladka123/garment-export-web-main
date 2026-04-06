@@ -3,7 +3,7 @@ import { Users, TrendingUp, Globe as Globe2, Award } from "lucide-react";
 export default function About() {
   const stats = [
     { icon: Users, value: "2,000+", label: "Skilled Workers" },
-    { icon: TrendingUp, value: "15+", label: "Years Experience" },
+    { icon: TrendingUp, value: "5+", label: "Years Experience" },
     { icon: Globe2, value: "25+", label: "Export Countries" },
     { icon: Award, value: "100%", label: "Quality Guaranteed" },
   ];
